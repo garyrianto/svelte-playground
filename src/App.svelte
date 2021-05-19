@@ -1,8 +1,10 @@
 <script>
 	export let name;
+	export let headText = 'This is a div';
 </script>
 
 <main>
+    <div class="test" >{headText}<div>
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
@@ -22,9 +24,15 @@
 		font-weight: 100;
 	}
 
+	.test {
+	    width: 500px;
+	    height: 500px;
+	}
+
 	@media (min-width: 640px) {
 		main {
 			max-width: none;
 		}
 	}
+
 </style>
