@@ -1,11 +1,16 @@
 <script>
 	export let name;
 	export let headText = 'This is a div';
+	let age = 40;
+	function incrementAge() {
+		age += 1;
+	}
 </script>
 
 <main>
-    <div class="test" >{headText}<div>
-	<h1>Hello {name}!</h1>
+    <div class="test">{headText}</div>
+	<h1>Hello {name}!, my age is {age}</h1>
+	<button on:click="{incrementAge}">Click Me!</button>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 
